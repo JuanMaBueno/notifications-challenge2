@@ -1,0 +1,106 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  font-family: $font-family-text;
+  font-size: $font-size-default;
+  font-weight: 800px;
+  color: $dark-blue2;
+  background-color: $light-blue;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.notificationsPanel{
+  max-width: 500px;
+  width: 100%;
+  background: $white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.notificationsHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h6{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.badge{
+  background-color: $primary-color-two;
+  color: $white;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.markAllRead{
+  color: $primary-color-two;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.notificationWrapper{
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: $white;
+  border-left: 4px solid transparent;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+
+  &.unread {
+    background-color: $blue1;
+    border-left-color: $primary-color-two;
+  }
+}
+
+.notificationAvatar{
+  margin-right: 1px;
+}
+
+.notificationContent{
+  display: flex;
+  flex-direction: column;
+}
+
+.notificationText{
+  font-weight: bold;
+  margin-right: 1px;
+}
+
+.notificationAction{
+  margin-right: 5px;
+}
+
+.notificationDate{
+  color: $dark-blue;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.notificationPostContent{
+  font-weight: normal;
+  color: $primary-color-two;
+}
+
+.notificationMessage{
+  padding: 10px;
+  background-color: $light-blue;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-weight: normal;
+  color: $dark-blue2;
+}
